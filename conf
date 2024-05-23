@@ -1,0 +1,37 @@
+configuration du samba : smb.conf
+sudo nano /etc/samba/smb.conf 
+
+[partage]
+   path = /home/fabrino/partage
+#   valid users = fabrino
+   browseable = yes
+   read only = no
+   guest ok = yes
+
+Pour voire les fichiers disponibles dans le dossier partage :
+    smbclient //localhost/partage -U fabrino -c
+
+
+config du php.ini pour le volume de telechargement : 
+
+sudo nano /opt/lampp/etc/php.ini
+
+upload_max_filesize = 500M
+post_max_size = 500M
+
+config httpd.conf pour accepter le dossier externe que htdoc 
+cd /opt/lampp/apache2/conf/
+Alias /partage "/home/fabrino/partage/"
+
+<Directory "/home/fabrino/partage/">
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+
+
+Restart le xampp
+
+    /opt/lampp$ sudo ./xampp restart
+
+

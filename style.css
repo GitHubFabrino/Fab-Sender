@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dadada;
+    /* background-color: rgb(20, 20, 20); */
+    color: rgb(48, 48, 48);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.containerHead {
+    /* background-color: red; */
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-image: url('./image/iStock-1133511685\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 10px auto;
+    padding: 1vw;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 70px;
+    color: white !important;
+
+}
+
+.subtitle {
+    text-align: center;
+    color: #dadada;
+    background-color: rgba(25, 24, 24, 0.483);
+    width: 15%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.titre {
+    height: 50px;
+    margin: auto;
+    text-align: left;
+}
+
+.titre1 {
+    width: 80%;
+    height: 50px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.formulaire {
+    width: 70%;
+    background-color: rgba(114, 113, 113, 0.246);
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(105, 104, 104);
+    flex-flow: row wrap;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #084cdf;
+    color: #f3f3f3;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 10px;
+    border: none;
+    background: #084cdf;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.item {
+    width: 80%;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+
+.categorie {
+    text-align: left;
+}
+
+.total {
+    text-align: right;
+}
+
+.itemFile {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+
+.itemContainer {
+    background-color: rgba(208, 208, 209, 0.634);
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+
+.telecharger {
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(51, 51, 243);
+    border-radius: 5px;
+    margin: 2px;
+    color: #fff;
+    border: none;
+}
+
+.delete {
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(243, 51, 51);
+    border-radius: 5px;
+    margin: 2px;
+    color: #fff;
+    border: none;
+}
+
+.nameFile {
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    padding: 5px;
+}
+
+.icon {
+    width: 10%;
+    /* background-color: #4caf50; */
+}
+
+.nameTitle {
+    width: 80%;
+    /* background-color: #084cdf; */
+}
+
+.nameTitle h6 {
+    color: #989696;
+}
+
+a {
+    text-decoration: none;
+}
+
+#progressBarContainer {
+    width: 100%;
+    height: 50vw;
+    background-color: #6363639d;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.conatinerProgress h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.conatinerProgress {
+    width: 50%;
+    height: 15vw;
+    background-color: rgb(233, 236, 238);
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+#message {
+    padding: 10px;
+    margin: 20px;
+    background-color: #4caf50;
+    position: absolute;
+    right: 0;
+}
+
+.containerProgressBar {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100px;
+}
+
+#progressBar {
+    width: 0%;
+    height: 30px;
+    background-color: #4caf50;
+
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
